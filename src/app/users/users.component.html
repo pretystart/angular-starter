@@ -1,0 +1,10 @@
+<a>user:</a>
+{{ userToken }}
+<br />
+ <a [routerLink]=" ['./login'] "
+        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+        login
+      </a>
+<main>
+      <router-outlet></router-outlet>
+</main>

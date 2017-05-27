@@ -2,7 +2,13 @@ html, body{
   height: 100%;
   font-family: Arial, Helvetica, sans-serif
 }
-
+#navigation{
+  background-color: yellow;
+  text-align: center
+}
 a.active {
   background-color: gray;
+}
+footer{
+  text-align: center
 }

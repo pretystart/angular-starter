@@ -14,7 +14,8 @@ import {
   RouterModule,
   PreloadAllModules
 } from '@angular/router';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -25,6 +26,9 @@ import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
+// import { UsersComponent } from './users';
+// import { AuthenticationService } from './users/users.AuthenticationService';
+
 import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
@@ -51,6 +55,7 @@ type StoreType = {
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
+    // UsersComponent,
     AboutComponent,
     HomeComponent,
     NoContentComponent,
@@ -63,6 +68,10 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
+    // UsersModule,
+    // AuthenticationService,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   /**

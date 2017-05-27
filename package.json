@@ -3,7 +3,6 @@
   "version": "6.0.0",
   "description": "An Angular 2 Webpack Starter kit featuring Angular 2 (Router, Http, Forms, Services, Tests, E2E, Coverage), Karma, Protractor, Jasmine, Istanbul, TypeScript, and Webpack by AngularClass",
   "keywords": [
-    "angular",
     "angular2",
     "webpack",
     "typescript"
@@ -85,9 +84,11 @@
     "core-js": "^2.4.1",
     "http-server": "^0.9.0",
     "ie-shim": "^0.1.0",
-    "reflect-metadata": "^0.1.10",
+    "jasmine-core": "^2.5.2",
+    "reflect-metadata": "^0.1.9",
     "rxjs": "5.0.2",
-    "zone.js": "~0.8.5"
+    "typescript": "2.2.2",
+    "zone.js": "0.7.6"
   },
   "devDependencies": {
     "@angular/compiler-cli": "~4.0.3",
