@@ -15,7 +15,9 @@ import {
   PreloadAllModules
 } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+//import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {MdSidenav, MdButtonModule, MdCheckboxModule, MdSidenavModule} from '@angular/material';
+import 'hammerjs';
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -69,7 +71,9 @@ type StoreType = {
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule,
+    MdButtonModule, 
+    MdCheckboxModule,
+    //NoopAnimationsModule,
     // UsersModule,
     // AuthenticationService,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
