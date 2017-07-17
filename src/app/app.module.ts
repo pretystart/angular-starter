@@ -1,22 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {
-  NgModule,
-  ApplicationRef
-} from '@angular/core';
-import {
-  removeNgStyles,
-  createNewHosts,
-  createInputTransfer
-} from '@angularclass/hmr';
-import {
-  RouterModule,
-  PreloadAllModules
-} from '@angular/router';
+import { NgModule, ApplicationRef } from '@angular/core';
+import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
+import { RouterModule, PreloadAllModules } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import {MdSidenav, MdButtonModule, MdCheckboxModule, MdSidenavModule} from '@angular/material';
+// import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from '@angular/material'
 import 'hammerjs';
 /*
  * Platform and Environment providers/directives/pipes
@@ -71,12 +61,12 @@ type StoreType = {
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    MdButtonModule, 
-    MdCheckboxModule,
-    //NoopAnimationsModule,
+    
+    // NoopAnimationsModule,
     // UsersModule,
     // AuthenticationService,
-    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
+    MaterialModule
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.
